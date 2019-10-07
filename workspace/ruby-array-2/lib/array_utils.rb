@@ -1,7 +1,8 @@
 class ArrayUtils
 
   def self.compara(lista1, lista2)
-    lista1.length == lista2.length
+    #lista1.length == lista2.length
+    lista1.sort == lista2.sort
   end
 
   def self.divisiveis(num1, num2)

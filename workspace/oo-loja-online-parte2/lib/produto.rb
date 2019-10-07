@@ -7,11 +7,11 @@ class Produto
     @estoque = estoque
   end
 
-  def adiciona_estoque(nome: nome, preco: preco, estoque: estoque)
-    estoque + estoque
+  def adiciona_estoque(estoque)
+    @estoque += estoque
   end
 
-  def remove_estoque(nome: nome, preco: preco, estoque: estoque)
-    @estoque = @estoque - estoque
+  def remove_estoque(estoque)
+    @estoque -= estoque
   end
 end

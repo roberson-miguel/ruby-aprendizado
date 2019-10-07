@@ -1,9 +1,17 @@
 class Arrays
-lista = []
+
   def self.multiplica_antecessor_predecessor(array)
-    var1, var2, var3, var4, var5, var6 = array[0..array.length]
-    result = array.map {|number| number * var1 }
+
+    array.to_a.each_cons(2)
+
 
   end
 
 end
+
+=begin
+lendo a matriz de números inteiros, preciso atualiza todos os elementos com a
+  multiplicação dos elementos anterior e seguinte, com as seguintes exceções:
+  a) O primeiro elemento é substituído pela multiplicação do primeiro e do segundo.
+  b) O último elemento é substituído pela multiplicação do último e do penúltimo
+=end
